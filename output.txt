@@ -1,0 +1,4 @@
+addition of 122 and 457 is: 579
+subtraction of 122 and 457 is: -335
+multiplication of 122 and 457 is: 55754
+division of 122 and 457 is: 0.2670
