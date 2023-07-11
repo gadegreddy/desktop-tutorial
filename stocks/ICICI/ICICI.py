@@ -8,7 +8,7 @@ from tensorflow.keras.layers import LSTM, Dense
 
 # Load the stock data
 symbol = "ICICIBANK.NS"
-data = yf.download(symbol, start="2010-01-01", end="2023-06-10")
+data = yf.download(symbol, start="2010-01-01", end="2023-06-21")
 
 # Define the folder to save the models
 model_folder = "saved_models"

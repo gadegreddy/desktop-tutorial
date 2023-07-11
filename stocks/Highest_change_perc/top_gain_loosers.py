@@ -23,7 +23,7 @@ def get_stock_with_highest_percentage_change(input_file):
     return stock_details
 
 # Example usage
-input_file = 'EQUITY----.csv'  # Replace with the path to your input CSV file
+input_file = 'EQUITY_L.csv'  # Replace with the path to your input CSV file
 
 stock_details = get_stock_with_highest_percentage_change(input_file)
 
@@ -31,14 +31,14 @@ stock_details = get_stock_with_highest_percentage_change(input_file)
 stock_details.sort(key=lambda x: x['Percentage Change'], reverse=True)
 
 # Get the top 10 stocks with maximum percentage change
-top_10_max_change = stock_details[:10]
+top_10_max_change = stock_details[:500]
 
 # Sort the stock details by percentage change in ascending order
 stock_details.sort(key=lambda x: x['Percentage Change'])
 
 # Get the top 10 stocks with minimum percentage change
-top_10_min_change = stock_details[:10]
+top_10_min_change = stock_details[:100]
 
 # Write the output to separate CSV files
-pd.DataFrame(top_10_max_change).to_csv('Top_Gainers.csv', index=False)
-pd.DataFrame(top_10_min_change).to_csv('Top_Losers.csv', index=False)
+pd.DataFrame(top_10_max_change).to_csv('June_Top_Gainers.csv', index=False)
+pd.DataFrame(top_10_min_change).to_csv('June_Top_Losers.csv', index=False)
